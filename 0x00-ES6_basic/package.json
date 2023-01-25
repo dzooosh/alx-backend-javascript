@@ -12,7 +12,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "nodemon test.js",
-    "dev": "node 0-main.js",
+    "dev": "node",
     "tp": "nodemon transaction-processor.js",
     "server": "nodemon --exec 'npm run dev && npm run tp'"
   },
