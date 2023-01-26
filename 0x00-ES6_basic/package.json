@@ -6,10 +6,11 @@
   "type": "module",
   "dependencies": {
     "babel-jest": "^29.4.0",
-    "eslint": "^8.32.0",
     "jest": "^29.4.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^8.32.0"
+  },
   "scripts": {
     "test": "nodemon test.js",
     "dev": "node",
