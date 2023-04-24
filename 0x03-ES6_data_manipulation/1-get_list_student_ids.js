@@ -3,8 +3,6 @@ export default function getListStudentIds(value) {
   if (!Array.isArray(value)) {
     return result;
   }
-  value.forEach((val) => {
-    result.push(val.id);
-  });
-  return result;
+  return value.map((val)=>val.id)
+  // return result;
 }
