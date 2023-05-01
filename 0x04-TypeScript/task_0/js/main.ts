@@ -4,26 +4,21 @@ interface Student {
     age: number;
     location: string;
 }
-
-class studentDetail {
-    firstName: string;
-    lastName: string;
-    age: number;
-    location: string;
-
-    constructor(firstName: string, lastName: string, age: number, location: string) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.age = age;
-        this.location = location;
-    }
+const studA: Student = {
+    firstName: "Joshua",
+    lastName: "Alonge",
+    age: 26,
+    location: "Ibadan",
+};
+const studB: Student = {
+    firstName: "Temitope",
+    lastName: "Tochi",
+    age: 27,
+    location: "Akure",
 }
 
-const studA: Student = new studentDetail("Joshua", "Alonge", 26, "Ibadan");
-const studB: Student = new studentDetail("Temitope", "Tochi", 21, "Ondo");
-
 // creating an array that stores the sttudents
-const studentsList: Array<Student> = [studA, studB]
+const studentsList: Array<Student> = [studA, studB];
 
 const body = document.getElementsByTagName("body")[0];
 const table = document.createElement('table');
@@ -46,7 +41,7 @@ studentsList.forEach((stud) => {
 
     row.append(td1, td2);
     tbody.appendChild(row);
-})
+});
 
 table.append(thead, tbody);
 body.append(table);
