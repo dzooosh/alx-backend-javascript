@@ -1,6 +1,3 @@
-const process = require('process')
-
-// input your name
 process.stdout.write("Welcome to Holberton School, what is your name? \n");
 
 if (process.stdin.isTTY) {
@@ -9,8 +6,7 @@ if (process.stdin.isTTY) {
     console.log(`Your name is: ${input}`);
     process.exit()
     });
-}
-else {
+} else {
   process.stdin.on('data', (data) => {
     const input = data.toString().trim();
     console.log(`Your name is: ${input}`);
