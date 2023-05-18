@@ -1,6 +1,5 @@
 # Unittests in JS
 
-
 - How to use Mocha to write a test suite
 - How to use different assertion libraries (Node or Chai)
 - How to present long test suites
