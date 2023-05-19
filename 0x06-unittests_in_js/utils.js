@@ -1,5 +1,5 @@
-const Utils = {
-  calculateNumber: function calculateNumber(type, a, b) {
+class Utils {
+  static calculateNumber(type, a, b) {
         if (type === 'SUM') {
           return Math.round(a) + Math.round(b);
         } else if (type === 'SUBTRACT') {
@@ -11,8 +11,8 @@ const Utils = {
           return ra / rb;
         } else {
           return "This is not a valid type";
-        }
-      },
+        }     
+  };
 };
 
 module.exports = Utils;
