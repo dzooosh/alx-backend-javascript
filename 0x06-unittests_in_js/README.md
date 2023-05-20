@@ -10,3 +10,5 @@
 - How to write integration tests with a small node server
 
 sinon.spy() is a feature that allows you to create a spy function, which records information about function calls made during a test. Spies can be useful for verifying that certain functions are called with specific arguments or for gathering information about function invocations.
+
+sinon.stub() method to create stub functions, which are similar to spies but with predefined behavior. Stubs allow you to replace a function with a custom implementation, controlling its return values and behavior during testing.
